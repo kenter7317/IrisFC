@@ -5,6 +5,7 @@ arm-non-eabi-gcc
 arm-non-eabi-newlib
 cmake
 ninja
+stlink
 ```
 
 ## How to build
@@ -13,7 +14,10 @@ cmake --preset Release
 cmake --build build
 ```
 
-
+## How to falsh
+```
+cmake --target flash
+```
 
 
 ## What is morb

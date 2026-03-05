@@ -17,29 +17,29 @@
   원하는 topic을 subscribe하여, callback함수를 통해 데이터를 받을 수 있습니다.
   
 ## Hierarchy of Project
-###drivers : 
-  하드웨어에 대한 드라이버들이 있습니다.
+> ### drivers :
+> > 하드웨어에 대한 드라이버들이 있습니다.
   
-###lib : 
-  하드웨어 독립적인 라이브러리들이 있습니다.
+> ### lib : 
+> > 하드웨어 독립적인 라이브러리들이 있습니다.
   
-###platform : 
-  stm32f411ceu6 HAL driver가 들어있습니다.
-  보드의 페리페럴을 초기화합니다.
+> ### platform : 
+> > stm32f411ceu6 HAL driver가 들어있습니다.
+> > 보드의 페리페럴을 초기화합니다.
 
-###middleware : 
-  subscribe/publish 방식의 통신 미들웨어 morb가 있습니다.
+> ### middleware : 
+> > subscribe/publish 방식의 통신 미들웨어 morb가 있습니다.
   
-###hardware (application) : 
-  drivers를 사용하여 하드웨어와 직접 통신하는 코드들이 있습니다.
+> ### hardware (application) : 
+> > drivers를 사용하여 하드웨어와 직접 통신하는 코드들이 있습니다.
 
-###modules (application) :
-  자세추정, 자세제어 코드등이 있습니다.
-  하드웨어와 직접 통신하지 않습니다.
-  센서 데이터들은 hardware계층에서 publish한 topic을 subscribe하여 사용합니다.
+> ### modules (application) :
+> > 자세추정, 자세제어 코드등이 있습니다.
+> > 하드웨어와 직접 통신하지 않습니다.
+> > 센서 데이터들은 hardware계층에서 publish한 topic을 subscribe하여 사용합니다.
 
-###main.c (application) : 
-  platform, hardware, modules 를 초기화하고, 루프를 호출합니다.
+> ### main.c (application) : 
+> > platform, hardware, modules 를 초기화하고, 루프를 호출합니다.
 
 
 ## Photos

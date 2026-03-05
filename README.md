@@ -41,6 +41,7 @@
 > ### main.c (application) :
 > platform, hardware, modules 를 초기화하고, 루프를 호출합니다.
 
+------------
 
 ## Photos
 ![photo_2026-03-03_15-06-45](https://github.com/user-attachments/assets/3c72dd2d-4eca-452d-9cf0-edc773dd3324)

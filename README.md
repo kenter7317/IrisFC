@@ -16,7 +16,7 @@ cmake --build build
 
 ## How to falsh
 ```
-cmake --target flash
+cmake --build buld --target flash
 ```
 
 

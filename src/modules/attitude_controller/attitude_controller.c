@@ -23,7 +23,6 @@ static bool s_is_attitude_estimator_updated;
 
 static struct crsf_rc_channels s_attitude_controller_rc_channels;
 
-
 static float map(float x, float min_in, float max_in, float min_out, float max_out)
 {
 	return (x - min_in) * (max_out - min_out) / (max_in - min_in) + min_out;

@@ -7,7 +7,7 @@
 
 #include "ubx_queue.h"
 
-
+//Fixit: Non only Functional Code (return a variable code)
 bool ubx_q_init(struct ubx_queue *queue)
 {
 	assert(queue);

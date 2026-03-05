@@ -5,8 +5,8 @@
             "name": "default",
             "hidden": true,
             "generator": "Ninja",
-            "binaryDir": "${sourceDir}/${presetName}",
-		    "toolchainFile": "${sourceDir}/cubeide-gcc.cmake",
+            "binaryDir": "build",
+		"toolchainFile": "arm-none-eabi-gcc.cmake",
             "cacheVariables": {
             }
         },

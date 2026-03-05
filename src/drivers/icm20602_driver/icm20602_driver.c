@@ -271,8 +271,8 @@ bool drv_icm20602_remove_accel_bias_lsb(struct drv_icm20602 *imu, int16_t x_bias
 
 bool drv_icm20602_calibrate_gyro(struct drv_icm20602 *imu)
 {
-	int16_t x_gyro_bias_lsb, y_gyro_bias_lsb, z_gyro_bias_lsb;
-	int16_t tmp_x_gyro_bias_lsb, tmp_y_gyro_bias_lsb, tmp_z_gyro_bias_lsb;
+	int16_t x_gyro_bias_lsb = 0, y_gyro_bias_lsb = 0, z_gyro_bias_lsb = 0;
+	int16_t tmp_x_gyro_bias_lsb = 0, tmp_y_gyro_bias_lsb = 0, tmp_z_gyro_bias_lsb = 0;
 
 	for (int i = 0; i < 1000; i++) {
 		drv_icm20602_get_accel_lsb(imu, &tmp_x_gyro_bias_lsb, &tmp_y_gyro_bias_lsb, &tmp_z_gyro_bias_lsb);
@@ -290,8 +290,8 @@ bool drv_icm20602_calibrate_gyro(struct drv_icm20602 *imu)
 
 bool drv_icm20602_calibrate_accel(struct drv_icm20602 *imu)
 {
-	int16_t x_accel_bias_lsb, y_accel_bias_lsb, z_accel_bias_lsb;
-	int16_t tmp_x_accel_bias_lsb, tmp_y_accel_bias_lsb, tmp_z_accel_bias_lsb;
+	int16_t x_accel_bias_lsb = 0, y_accel_bias_lsb = 0, z_accel_bias_lsb = 0;
+	int16_t tmp_x_accel_bias_lsb = 0, tmp_y_accel_bias_lsb = 0, tmp_z_accel_bias_lsb = 0;
 
 	for (int i = 0; i < 1000; i++) {
 		drv_icm20602_get_accel_lsb(imu, &tmp_x_accel_bias_lsb, &tmp_y_accel_bias_lsb, &tmp_z_accel_bias_lsb);

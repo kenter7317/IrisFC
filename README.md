@@ -1,3 +1,15 @@
+
+## How to build
+```
+	cmake --preset Release
+	cmake --build build
+```
+
+
+
+
+## morb란
+
 morb란
   onboard 통신 middleware입니다.
   application 간의 통신은 모두 morb를 통합니다.
@@ -6,8 +18,7 @@ morb란
   가져갈 수 있게 합니다.
   원하는 topic을 subscribe하여, callback함수를 통해 데이터를 받을 수 있습니다.
   
-
-
+## Project 계층
 drivers : 
   하드웨어에 대한 드라이버들이 있습니다.
   
@@ -33,6 +44,7 @@ main.c (application) :
   platform, hardware, modules 를 초기화하고, 루프를 호출합니다.
 
 
+## Photos
 ![photo_2026-03-03_15-06-45](https://github.com/user-attachments/assets/3c72dd2d-4eca-452d-9cf0-edc773dd3324)
 
 ![photo_2026-03-03_15-06-55](https://github.com/user-attachments/assets/cabb93f9-d984-43c2-a3f2-7e23969e758a)

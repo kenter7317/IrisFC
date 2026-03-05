@@ -25,7 +25,6 @@ int _write(int file, char* p, int len){
 	return len;
 }
 
-
 int main()
 {
 	platform_init();

@@ -55,6 +55,14 @@ cmake --build buld --target flash
 
 ------------
 
+## Hardware Specification
+stm32f411ceu6
+icm20602
+neom8n
+hmc5883l
+aht20
+bmp280
+
 ## Photos
 ![photo_2026-03-03_15-06-45](https://github.com/user-attachments/assets/3c72dd2d-4eca-452d-9cf0-edc773dd3324)
 

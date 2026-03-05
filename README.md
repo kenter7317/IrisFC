@@ -1,8 +1,16 @@
 
+## Require
+```
+arm-non-eabi-gcc
+arm-non-eabi-newlib
+cmake
+ninja
+```
+
 ## How to build
 ```
-	cmake --preset Release
-	cmake --build build
+cmake --preset Release
+cmake --build build
 ```
 
 
